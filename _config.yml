@@ -1,0 +1,5 @@
+name: Your New Jekyll Site
+kramdown:
+  input: GFM
+markdown: redcarpet
+pygments: true
