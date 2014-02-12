@@ -1,6 +1,6 @@
 name: krx.io
 description: "Ideas and thoughts"
-url: "http://iamkristian.github.io"
+url: "http://krx.io"
 pygments: true
 markdown: redcarpet
 markdown_ext:  markdown,mkd,mkdn,md
