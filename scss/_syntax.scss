@@ -1,0 +1,18 @@
+code {
+  margin: 0 2px;
+  padding: 0px 5px;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+  color: $black;
+
+}
+
+code, kbd, pre, samp {
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+pre code {
+  border: none;
+  background-color: #f8f8f8;
+}
