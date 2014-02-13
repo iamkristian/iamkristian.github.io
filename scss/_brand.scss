@@ -1,0 +1,26 @@
+$black: #251F1C;
+$orange: #f15922;
+$blue: #013968;
+$light: #f0e7cf;
+$earth: #c1a163;
+$grey: #F7F7F7;
+$footer-grey: #787878;
+
+a, a i,
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a,  {
+  background-color: #fff;
+  text-decoration: none;
+  color: $black;
+  transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  &:hover {
+    color: $orange;
+    text-decoration: none;
+  }
+  &:active {
+    color: $orange;
+    text-decoration: none;
+  }
+}

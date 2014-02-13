@@ -2,4 +2,6 @@
 layout: default
 title: About me
 ---
-blah
+# About me
+
+Hi I'm Kristian.

@@ -1,9 +1,16 @@
 ---
 layout: default
-title: Iamkristian | Ideas & thoughts
+title: Home
 ---
-
+<div class="jumbotron">
+  <div class="container">
+    <h2>This is the home of Kristian Rasmussen.<br/>
+      <small>A site about hacking, and bringing order to some of the chaos</small>
+    </h2>
+  </div>
+</div>
+<hr/>
 {% for post in site.posts %}
 <h3><small>{{ post.date | date: "%Y.%m.%d" }}</small><br/><a href="{{ post.url }}">{{ post.title }}</a></h3>
-<p>{{ post.excerpt }}
+<hr/>
 {% endfor %}

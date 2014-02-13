@@ -1,0 +1,4 @@
+# Logfile created on 2014-02-12 21:53:09 +0100 by logger.rb/44203
+I, [2014-02-12T21:53:09.083656 #17300]  INFO -- : 0:  rb-fsevent (0.9.4) from /usr/local/opt/rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/specifications/rb-fsevent-0.9.4.gemspec
+I, [2014-02-12T21:53:09.084119 #17300]  INFO -- : 0:  sass (3.2.14) from /usr/local/opt/rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/specifications/sass-3.2.14.gemspec
+I, [2014-02-12T21:53:09.084594 #17300]  INFO -- : 0:  bundler (1.5.1) from /usr/local/opt/rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/specifications/bundler-1.5.1.gemspec

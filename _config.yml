@@ -6,6 +6,8 @@ markdown: redcarpet
 markdown_ext:  markdown,mkd,mkdn,md
 permalink: /blog/:year/:month/:day/:title
 
+exclude: ['scripts','scss', 'README.md', 'CNAME', 'Gemfile', 'Gemfile.lock', '.ruby-version']
+
 redcarpet:
   extensions: ['no_intra_emphasis',
                'fenced_code_blocks',
