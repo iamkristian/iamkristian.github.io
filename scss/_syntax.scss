@@ -10,9 +10,11 @@ code {
 
 code, kbd, pre, samp {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-size: 12px;
 }
 
 pre code {
   border: none;
   background-color: #f8f8f8;
+  font-size: 12px;
 }
