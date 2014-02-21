@@ -1,4 +1,6 @@
+@import 'bootstrap.min';
 @import 'brand';
+@import 'markdown';
 @import 'syntax';
 
 html,
@@ -24,6 +26,11 @@ small a {
 
 .page-header {
   padding: 40px 0 0;
+}
+
+.meta {
+  font-size: smaller;
+  color: #999;
 }
 
 #footer {

@@ -1,0 +1,30 @@
+.markdown {
+
+  table {
+    width: 100%;
+    overflow: auto;
+    display: block;
+
+    & th, & td {
+      border: 1px solid #ddd;
+      padding: 6px 13px;
+    }
+
+    & th {
+      font-weight: bold;
+    }
+    & tr {
+      border-top: 1px solid #ccc;
+      background-color: #fff;
+    }
+    & tr:nth-child(2n) {
+      background-color: $grey;
+    }
+  }
+}
+p, .highlight {
+  code, kbd, pre, samp {
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    font-size: 14px;
+  }
+}

@@ -1,8 +1,8 @@
 name: krx.io
 description: "Ideas and thoughts"
 url: "http://krx.io"
-pygments: true
 markdown: redcarpet
+pygments: true
 markdown_ext:  markdown,mkd,mkdn,md
 permalink: /blog/:year/:month/:day/:title
 
