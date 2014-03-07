@@ -1,3 +1,5 @@
+.highlight {
+}
 code {
   margin: 0 2px;
   padding: 0px 5px;
@@ -5,7 +7,6 @@ code {
   background-color: #f8f8f8;
   border-radius: 3px;
   color: $black;
-
 }
 
 code, kbd, pre, samp {
@@ -13,8 +14,18 @@ code, kbd, pre, samp {
   font-size: 12px;
 }
 
+pre {
+  overflow: auto;
+  word-wrap: normal;
+}
+
 pre code {
   border: none;
   background-color: #f8f8f8;
   font-size: 12px;
+  max-width: initial;
+  white-space: pre;
+  word-wrap: normal;
+  overflow: initial;
+  display: inline;
 }
