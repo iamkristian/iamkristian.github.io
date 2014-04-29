@@ -5,6 +5,8 @@ date:   2014-03-14 10:32:41
 categories: ruby rails elastic_search
 ---
 
+I've wanted to dive into Elastic search and see what it does for sometime. Mostly to see how it was working with it.
+
 ## Search Basics
 
 When you first dive into search, there's a couple of concepts you need to know about.
@@ -125,6 +127,7 @@ author:gebe        # Will return documents with author gebe
 -author:gebe       # Will make exclude author gebe from results
 ```
 Querying throug the gem would add this to the ``` Elastic ``` class
+
 ```ruby
 def search(options = {})
   client.search(index: 'ycombinator', type: 'items', body: options)
