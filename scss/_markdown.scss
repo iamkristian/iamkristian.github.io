@@ -1,5 +1,48 @@
 .markdown {
 
+  h1 {
+    font-size: 2.5em;
+    border-bottom: 1px solid #ddd;
+  }
+
+  h2 {
+    font-size: 2em;
+    border-bottom: 1px solid #eee;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+
+  h5, h6 {
+    font-size: 1em;
+  }
+
+  h6 {
+    color: #777;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 1em 0 15px;
+    line-height: 1.7em;
+    padding: 0;
+    cursor: text;
+    position: relative;
+  }
+
+  p, blockquote, ul, ol, dl, table, pre {
+    margin: 15px 0;
+  }
+  blockquote {
+    & > :first-child, & > :last-child {
+      margin-top: 0;
+    }
+  }
+
   table {
     width: 100%;
     overflow: auto;
@@ -22,6 +65,7 @@
     }
   }
 }
+
 p, .highlight {
   code, kbd, pre, samp {
     font-family: Consolas, "Liberation Mono", Courier, monospace;
