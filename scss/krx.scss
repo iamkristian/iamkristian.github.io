@@ -50,3 +50,14 @@ small a {
   color: $black;
   background-color: #ffffff;
 }
+
+.post {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+}
+.pagination {
+  width: 100%;
+  text-align: right;
+  padding-top: 30px;
+}
