@@ -16,7 +16,7 @@ The source from the talk can be found here:
 
 * [iamkristian/web_development_with_elixir](https://github.com/iamkristian/web_development_with_elixir_talk)
 * [iamkristian/elixir_commits](https://github.com/iamkristian/elixir_commits)
-* [iamkristian/rack_bare](https://github.com/iamkristian/rack_bare)
+* [iamkristian/rack_example](https://github.com/iamkristian/rack_example)
 
 
 | Language | Options | Result |
