@@ -18,6 +18,7 @@ The source from the talk can be found here:
 * [iamkristian/elixir_commits](https://github.com/iamkristian/elixir_commits)
 * [iamkristian/rack_example](https://github.com/iamkristian/rack_example)
 
+## Performance
 
 | Language | Options | Result |
 |:---------|-------|------:|
@@ -37,5 +38,13 @@ All tests were performed using
 ```
 wrk -t 10 -c 400 <url>
 ```
+
+## Resources for learning more
+
+* [Elixirsips](http://elixirsips.com)
+* [Learn You Some Erlang](http://learnyousomeerlang.com/)
+* [Programming Elixir](http://pragprog.com/book/elixir/programming-elixir)
+* [Erlang & OTP in Action](http://www.manning.com/logan/)
+* [The Little Elixir & OTP Guidebook](http://www.exotpbook.com/)
 
 Thank you to the [Copenhagen Ruby Brigade](http://copenhagenrb.dk) for being an awesome audience.
