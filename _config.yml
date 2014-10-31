@@ -2,7 +2,7 @@ name: krx.io
 description: "Ideas and thoughts"
 url: "http://krx.io"
 markdown: redcarpet
-highlighter: :pygments
+highlighter: pygments
 markdown_ext:  markdown,mkd,mkdn,md
 permalink: /blog/:year/:month/:day/:title
 paginate: 9
