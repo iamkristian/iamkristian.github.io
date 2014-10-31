@@ -2,10 +2,10 @@ name: krx.io
 description: "Ideas and thoughts"
 url: "http://krx.io"
 markdown: redcarpet
-pygments: true
+highlighter: :pygments
 markdown_ext:  markdown,mkd,mkdn,md
 permalink: /blog/:year/:month/:day/:title
-paginate: 3
+paginate: 9
 paginate_path: "blog/page/:num"
 
 exclude: ['scripts','scss', 'README.md', 'CNAME', 'Gemfile', 'Gemfile.lock', '.ruby-version']
@@ -18,3 +18,5 @@ redcarpet:
                'autolink',
                'with_toc_data',
                'tables']
+sass:
+  style: :compressed

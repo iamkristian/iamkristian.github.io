@@ -4,12 +4,8 @@ title: Home
 ---
 {% for post in paginator.posts %}
 <div class="post">
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
   <p class="meta">{{ post.date | date_to_string }}, <a href="{{ post.url }}/#disqus_thread"></a></p>
-
-  <div class="markdown">
-  {{ post.content }}
-  </div>
 </div>
 {% endfor %}
 

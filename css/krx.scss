@@ -1,3 +1,6 @@
+---
+---
+
 @import 'bootstrap.min';
 @import 'brand';
 @import 'markdown';
@@ -8,10 +11,6 @@ body {
   height: 100%;
 }
 
-small a {
-  color: $grey;
-}
-
 #wrapper {
   min-height: 100%;
   height: auto;
@@ -20,7 +19,7 @@ small a {
 }
 
 .page-header {
-  padding: 40px 0 0;
+  padding: 20px 0 0;
 }
 
 .meta {
@@ -35,10 +34,6 @@ small a {
   & > .container {
     margin: 0 auto -50px;
   }
-  .container .text-muted {
-    text-align: right;
-    margin: 20px 0;
-  }
 }
 
 .navbar-default {
@@ -47,9 +42,6 @@ small a {
 }
 
 .post {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #ccc;
 }
 .pagination {
   width: 100%;
