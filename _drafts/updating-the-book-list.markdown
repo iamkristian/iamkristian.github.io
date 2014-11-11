@@ -36,11 +36,15 @@ Books on my reading list
 
 :blue_book: Practical object oriented design in ruby
 
-:blue_book: Eloquent ruby
+:heavy_check_mark: Objects On Rails
 
-:blue_book: Refactoring ruby
+:heavy_check_mark: Eloquent ruby
+
+:heavy_check_mark: Refactoring ruby
+
+:heavy_check_mark: Rails Antipatterns
 
 ## Search
 
-:orange_book: Elastic Search Server
+:heavy_check_mark: Elastic Search Server
 
