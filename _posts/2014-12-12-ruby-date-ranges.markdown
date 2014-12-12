@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ruby & Rails Date ranges"
-date:   2014-12-12 08:58
+date:   2014-12-12 08:58:00
 categories: ruby date ranges
 ---
 
