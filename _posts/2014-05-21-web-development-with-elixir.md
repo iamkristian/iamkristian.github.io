@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Web Development With Elixir"
-date:   2014-05-23 06:43:00
+date:   2014-05-22 06:43:00
 categories: elixir, web
 ---
 About a month ago [@jamiemhodge](https://twitter.com/jamiemhodge) talked me
