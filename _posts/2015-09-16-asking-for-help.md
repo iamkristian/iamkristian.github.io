@@ -6,6 +6,6 @@ categories: quote
 ---
  > Be strong enough to stand alone.
  > Smart enough to know when to ask for help,
- > And brave enough to ask for it.
+ > and brave enough to ask for it.
  >
  > -- <cite>source unknown</cite>
