@@ -4,7 +4,7 @@ title: "Training motivation"
 ---
 
 Below I've included some of the videos that inspire me to train and get back
-in the game. It's no secret I'm a bit flappy side, and got a burning desire
+in the game. It's no secret I'm a bit flappy on the side, and got a burning desire
 to loose weight.
 
 ### Bar Brothers DK - 16 year old body transformation
