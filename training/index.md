@@ -19,6 +19,9 @@ to loose weight.
 ### High Power Workout Motivation
 <iframe width="640" height="360" src="https://www.youtube.com/embed/bqCojo2O7hw?rel=0" frameborder="0" allowfullscreen></iframe>
 
+### Calisthenics Workout Motivation
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/zW_nndQVhZo" frameborder="0" allowfullscreen></iframe>
+
 ### It All Starts At 1
 <iframe width="640" height="360" src="https://www.youtube.com/embed/zzwn_mGHvzg?rel=0" frameborder="0" allowfullscreen></iframe>
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Turn off echo in pry"
+title:  "Turn off echo in pry or irb"
 date:   2015-10-27 13:30
 categories: ruby pry irb
 ---
