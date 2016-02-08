@@ -1,0 +1,21 @@
+{
+  "name": "iamkristian.github.io",
+  "homepage": "https://github.com/iamkristian/iamkristian.github.io",
+  "authors": [
+    "Kristian Rasmussen <me@krx.io>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
