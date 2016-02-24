@@ -10,16 +10,18 @@ paginate_path: "blog/page/:num"
 
 exclude: ['scripts','scss', 'README.md', 'CNAME', 'Gemfile', 'Gemfile.lock', '.ruby-version']
 
-redcarpet:
-  extensions: ['no_intra_emphasis',
-               'fenced_code_blocks',
-               'strikethrough',
-               'superscript',
-               'autolink',
-               'with_toc_data',
-               'tables']
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
 sass:
   style: :compressed
 gems:
   - jemoji
   - jekyll-mentions
+  - jekyll-paginate

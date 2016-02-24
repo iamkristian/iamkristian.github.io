@@ -1,27 +1,47 @@
-.highlight {
-}
-code {
-  margin: 0 2px;
-  padding: 0px 5px;
-  border: 1px solid #ddd;
-  background-color: #f8f8f8;
+.highlighter-rouge {
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
   border-radius: 3px;
-  color: $black;
+}
+.highlight {
+  margin: 0;
+}
+
+div.highlighter-rouge {
+  padding: 16px;
+  code:after, code:before {
+      content: normal;
+  }
+}
+
+code.highlighter-rouge {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+
 }
 
 code, kbd, pre, samp {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   font-size: 12px;
+  color: $black;
+}
+
+code:after, code:before {
+    letter-spacing: -0.2em;
+    content: "\00a0";
 }
 
 pre {
   overflow: auto;
   word-wrap: normal;
+  border: none;
+  padding: 0;
 }
 
 pre code {
-  border: none;
-  background-color: #f8f8f8;
   font-size: 12px;
   max-width: initial;
   white-space: pre;
