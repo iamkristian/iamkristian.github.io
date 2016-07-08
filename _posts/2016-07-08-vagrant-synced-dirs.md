@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Vagrant synced directories"
-date:   2016-07-08 13:30
+date:   2016-07-08 07:00
 categories: vagrant synced dirs
 ---
 I've often been wanting to mount a dir on the host system, when spinning up a
