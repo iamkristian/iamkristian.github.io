@@ -1,1 +1,0 @@
-bundle exec sass -t compressed -c --watch _sass/krx.scss:css/krx.css
