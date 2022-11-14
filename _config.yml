@@ -55,7 +55,6 @@ plugins:
 #   - vendor/gems/
 #name: krx.io
 markdown: kramdown
-theme: minima
 highlighter: rouge
 markdown_ext:  markdown,mkd,mkdn,md
 permalink: /blog/:year/:month/:day/:title
@@ -75,7 +74,3 @@ kramdown:
 
 sass:
   style: :compressed
-gems:
-  - jemoji
-  - jekyll-mentions
-  - jekyll-paginate   - vendor/ruby/
