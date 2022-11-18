@@ -21,7 +21,7 @@ gem install ctags_ruby
 
 Simply add the following to your ```.vimrc```
 
-```vim
+```vimrc
 set tags=.tags,.gemtags
 ```
 

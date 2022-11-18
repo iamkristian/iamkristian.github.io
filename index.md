@@ -6,5 +6,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 title: "Hej"
+pagination:
+  enabled: true
 layout: home
 ---

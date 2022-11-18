@@ -35,7 +35,7 @@ The talk produced some additional talk on twitter afterwards.
 
 All tests were performed using
 
-```
+```bash
 wrk -t 10 -c 400 <url>
 ```
 

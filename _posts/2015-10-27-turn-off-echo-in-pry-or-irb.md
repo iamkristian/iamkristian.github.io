@@ -7,7 +7,7 @@ categories: ruby pry irb
 When you do something in pry or irb that returns a looong result, sometimes
 you don't want the result in your terminal. So to turn it off you can do this.
 
-```
+```ruby
 # In irb
 irb_context.echo = false
 

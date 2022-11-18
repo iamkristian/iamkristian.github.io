@@ -9,13 +9,13 @@ vagrant server.
 
 Here is how I did it. First I had to install the ``` vagrant-vbguest ``` plugin. With this one liner
 
-```
+```bash
 vagrant plugin install vagrant-vbguest
 ```
 
 Then I added this to my ``` Vagrantfile ```
 
-```
+```bash
 Vagrant.configure("2") do |config|
  config.vm.synced_folder "tmp/", "/opt/tmp", owner: "root", group: "root"
 end
