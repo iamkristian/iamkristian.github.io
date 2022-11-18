@@ -64,9 +64,9 @@ paginate_path: "blog/page/:num"
 
 exclude: ['scripts','scss', 'README.md', 'CNAME', 'Gemfile', 'Gemfile.lock', '.ruby-version']
 
-site:
-  pages:
-    about:
+header_pages:
+  - index.md
+  - about/index.md
 
 kramdown:
   input: GFM

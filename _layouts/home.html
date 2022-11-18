@@ -9,6 +9,7 @@ layout: default
 
   {{ content }}
 
+  {% assign posts = site.posts %}
 
   {% if site.paginate %}
     {% assign posts = paginator.posts %}
@@ -16,8 +17,8 @@ layout: default
     {% assign posts = site.posts %}
   {% endif %}
 
-
   {%- if posts.size > 0 -%}
+  this is a test
     {%- if page.list_title -%}
       <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
@@ -31,7 +32,6 @@ layout: default
             {{ post.title | escape }}
           </a>
         </h3>
-        <p>{{ post.subtitle }}</p>
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
         {%- endif -%}
