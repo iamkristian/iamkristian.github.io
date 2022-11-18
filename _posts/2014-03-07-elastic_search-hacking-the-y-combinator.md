@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Elastic Search <small>- Hacking the Y-combinator</small>"
+title:  "Elastic Search - Hacking the Y-combinator"
 date:   2014-03-14 10:32:41
 categories: ruby rails elastic_search
 ---

@@ -2,7 +2,7 @@
 layout: post
 title:  "Web Development With Elixir"
 date:   2014-05-22 06:43:00
-categories: elixir, web
+categories: elixir web
 ---
 About a month ago [@jamiemhodge](https://twitter.com/jamiemhodge) talked me
 into giving a talk about web developement with [Elixir](http://elixir-lang.org)
