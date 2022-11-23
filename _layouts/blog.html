@@ -9,11 +9,6 @@ layout: default
 
   {{ content }}
 
-  {% comment %}
-  {% assign posts = paginator.posts %}
-  post size {{ posts.size }}
-  {%- if posts.size > 0 -%}
-  {% endcomment %}
     {%- if page.list_title -%}
       <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
@@ -59,7 +54,4 @@ layout: default
         </ul>
       </div>
     {%- endif %}
-{% comment %}
-  {%- endif -%}
-{% endcomment %}
 </div>
