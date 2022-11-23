@@ -1,26 +1,17 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-# This workflow will download a prebuilt Ruby version, install dependencies and run tests with Rake
-# For more information see: https://github.com/marketplace/actions/setup-ruby-jruby-and-truffleruby
-
-name: Ruby
+name: Build and deploy to GitHub Pages
 
 on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * *'
   push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
-
-permissions:
-  contents: read
-
+    branches:
+      - dev
 jobs:
-  build:
-    runs-on: ubuntu-latest
-   
+  deploy:
+    runs-on: ubuntu-20.04
     steps:
+
       - uses: actions/checkout@v2
 
       - name: Set up ruby
@@ -63,6 +54,15 @@ jobs:
           ### In cases where you want to specify the cache key, enable the above 2 inputs
           ### Follows the format here https://github.com/actions/cache
           #
-          custom_opts: '--future'
+          #custom_opts: '--future'
           ### If you need to specify any Jekyll build options, enable the above input
           ### Flags accepted can be found here https://jekyllrb.com/docs/configuration/options/#build-command-options
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          # if the repo you are deploying to is <username>.github.io, uncomment the line below.
+          # if you are including the line below, make sure your source files are NOT in the master branch:
+          publish_branch: master

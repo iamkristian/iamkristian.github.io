@@ -45,13 +45,13 @@ pagination:
   collection: 'posts'
   per_page: 9
   permalink: '/page/:num/'
+  title: ':title - page :num of :max'
   limit: 0
   sort_field: 'date'
   sort_reverse: true
 
 header_pages:
-  - blog.md
-  - index.md
+  - blog/index.md
   - about/index.md
 
 kramdown:

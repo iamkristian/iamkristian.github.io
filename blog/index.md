@@ -6,9 +6,9 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: blog
-title: "Blog"
 permalink: /blog/
 pagination:
   enabled: true
+title: "Blog"
 ---
 here is the blog
