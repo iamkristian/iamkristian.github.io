@@ -50,8 +50,9 @@ pagination:
   sort_reverse: true
 
 header_pages:
-  - blog.md
   - index.md
+  - test.md
+  - blog.md
   - about/index.md
 
 kramdown:
