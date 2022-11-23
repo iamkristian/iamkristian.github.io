@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2022-11-23T14:13:53+00:00</updated><id>/feed.xml</id><title type="html">krx.io</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</subtitle><author><name>Kristian Rasmussen</name><email>me@krx.io</email></author><entry><title type="html">Bekræftigelser</title><link href="/life/2022/05/16/bekraeftigelser.html" rel="alternate" type="text/html" title="Bekræftigelser" /><published>2022-05-16T09:00:00+00:00</published><updated>2022-05-16T09:00:00+00:00</updated><id>/life/2022/05/16/bekraeftigelser</id><content type="html" xml:base="/life/2022/05/16/bekraeftigelser.html">&lt;p&gt;Når hverdagen bliver træls og svær at komme igennem hos en kunde, så læner jeg mig op af disse slogans, eller &lt;em&gt;affirmations&lt;/em&gt; som de også hedder på engelsk.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Tag det roligt&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Nok den vigtigste - for hvis jeg ikke evner at tage det roligt, så skal jeg gå mig en tur og køle ned, for derved at finde balancen igen.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;En ting af gangen&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Jeg dur bare ikke til at lave flere ting samtidigt, selvom rigtig mange kunder gerne vil have det.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Det vigtigste først&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Når jeg kommer i tvivl om hvad det vigtigste er - så kigger jeg altid ind ad. Er det vigtigste nu at blive to timer længere på kontoret, eller at komme hjem og burge tid med familien?&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Det går over&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;De fleste tilstande er midlertidige, der er en ny dag i morgen og selvom det hele er gået ned og chefen er helt blå i hovedet, så kan fokus skifte om et øjeblik.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Det er ok at fejle, det er sådan du lærer&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Det er helt i orden at lave fejl, men jeg skal være ærlig om at jeg har fejlet, så alle kan få glæde af læringen.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Du er ikke forkert, fordi du er dig&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Jeg kan hurtigt komme til at føle mig forkert i andres selskab, det er der mange årsager til. Hvis jeg for eksempel kæmper med et eller andet komplekst kode problem, mens der står to kolleger og taler lige bag ved mig. Så er det helt i orden at jeg påpeger af de forstyrre mig.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Hold kritik på dit eget skrivebord&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>Kristian Rasmussen</name><email>me@krx.io</email></author><category term="life" /><summary type="html">Når hverdagen bliver træls og svær at komme igennem hos en kunde, så læner jeg mig op af disse slogans, eller affirmations som de også hedder på engelsk.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/IMG_7153.png" /><media:content medium="image" url="/IMG_7153.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Joys of Grep</title><link href="/grep/unix/2022/04/25/the-joys-of-grep.html" rel="alternate" type="text/html" title="The Joys of Grep" /><published>2022-04-25T09:00:00+00:00</published><updated>2022-04-25T09:00:00+00:00</updated><id>/grep/unix/2022/04/25/the-joys-of-grep</id><content type="html" xml:base="/grep/unix/2022/04/25/the-joys-of-grep.html">&lt;p&gt;I had this problem where I needed to match a lot of ids (approx. 10.000) against a data file. It would take too long time to write a program that validated the ids precense. What to do?&lt;/p&gt;
+
+&lt;p&gt;The Unix shell to the rescue. I remembered &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;grep&lt;/code&gt; have some of the functionality I wanted.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;man &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Gave me that&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; &amp;lt;file&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;will read the match patterns from a file. Next problem is to get &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;grep&lt;/code&gt;  to match the pattern on a fixed word.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; &amp;lt;file&amp;gt; &lt;span class=&quot;nt&quot;&gt;-Fw&lt;/span&gt; &amp;lt;match file&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This got me some of the way. Only problem remaining is the match result wasn’t complete - treating the file as ascii helped.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; &amp;lt;file&amp;gt; &lt;span class=&quot;nt&quot;&gt;-Fwa&lt;/span&gt; &amp;lt;match file&amp;gt; | &lt;span class=&quot;nb&quot;&gt;cut&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; &amp;lt;index&amp;gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; matches
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Gave the result I hoped for. All of the matching ids in a file ( &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;matches&lt;/code&gt; ) of its own.&lt;/p&gt;
+
+&lt;p&gt;Thank you &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;grep&lt;/code&gt;&lt;/p&gt;</content><author><name>Kristian Rasmussen</name><email>me@krx.io</email></author><category term="grep" /><category term="unix" /><summary type="html">I had this problem where I needed to match a lot of ids (approx. 10.000) against a data file. It would take too long time to write a program that validated the ids precense. What to do?</summary></entry><entry><title type="html">Vagrant synced directories</title><link href="/vagrant/synced/dirs/2016/07/08/vagrant-synced-dirs.html" rel="alternate" type="text/html" title="Vagrant synced directories" /><published>2016-07-08T07:00:00+00:00</published><updated>2016-07-08T07:00:00+00:00</updated><id>/vagrant/synced/dirs/2016/07/08/vagrant-synced-dirs</id><content type="html" xml:base="/vagrant/synced/dirs/2016/07/08/vagrant-synced-dirs.html">&lt;p&gt;I’ve often been wanting to mount a dir on the host system, when spinning up a
+vagrant server.&lt;/p&gt;
+
+&lt;p&gt;Here is how I did it. First I had to install the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vagrant-vbguest&lt;/code&gt; plugin. With this one liner&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vagrant plugin &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;vagrant-vbguest
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Then I added this to my &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Vagrantfile&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Vagrant.configure&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; |config|
+ config.vm.synced_folder &lt;span class=&quot;s2&quot;&gt;&quot;tmp/&quot;&lt;/span&gt;, &lt;span class=&quot;s2&quot;&gt;&quot;/opt/tmp&quot;&lt;/span&gt;, owner: &lt;span class=&quot;s2&quot;&gt;&quot;root&quot;&lt;/span&gt;, group: &lt;span class=&quot;s2&quot;&gt;&quot;root&quot;&lt;/span&gt;
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;and did a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vagrant reload&lt;/code&gt; and presto - vagrant mounted the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tmp&lt;/code&gt;
+folder inside &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/opt/tmp&lt;/code&gt;&lt;/p&gt;</content><author><name>Kristian Rasmussen</name><email>me@krx.io</email></author><category term="vagrant" /><category term="synced" /><category term="dirs" /><summary type="html">I’ve often been wanting to mount a dir on the host system, when spinning up a vagrant server.</summary></entry><entry><title type="html">Turn off echo in pry or irb</title><link href="/ruby/pry/irb/2015/10/27/turn-off-echo-in-pry-or-irb.html" rel="alternate" type="text/html" title="Turn off echo in pry or irb" /><published>2015-10-27T13:30:00+00:00</published><updated>2015-10-27T13:30:00+00:00</updated><id>/ruby/pry/irb/2015/10/27/turn-off-echo-in-pry-or-irb</id><content type="html" xml:base="/ruby/pry/irb/2015/10/27/turn-off-echo-in-pry-or-irb.html">&lt;p&gt;When you do something in pry or irb that returns a looong result, sometimes
+you don’t want the result in your terminal. So to turn it off you can do this.&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# In irb&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;irb_context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;false&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# In pry&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;_pry_config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;proc&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# If you want to restore echo in pry, save the print proc before overwriting it.&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;pry_print&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_pry_config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;_pry_config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;proc&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Kristian Rasmussen</name><email>me@krx.io</email></author><category term="ruby" /><category term="pry" /><category term="irb" /><summary type="html">When you do something in pry or irb that returns a looong result, sometimes you don’t want the result in your terminal. So to turn it off you can do this.</summary></entry><entry><title type="html">Asking for help</title><link href="/quote/2015/09/16/asking-for-help.html" rel="alternate" type="text/html" title="Asking for help" /><published>2015-09-16T08:30:00+00:00</published><updated>2015-09-16T08:30:00+00:00</updated><id>/quote/2015/09/16/asking-for-help</id><content type="html" xml:base="/quote/2015/09/16/asking-for-help.html">&lt;blockquote&gt;
+  &lt;p&gt;Be strong enough to stand alone.
+Smart enough to know when to ask for help,
+and brave enough to ask for it.&lt;/p&gt;
+
+  &lt;p&gt;– &lt;cite&gt;source unknown&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>Kristian Rasmussen</name><email>me@krx.io</email></author><category term="quote" /><summary type="html">Be strong enough to stand alone. Smart enough to know when to ask for help, and brave enough to ask for it. – source unknown</summary></entry><entry><title type="html">Ruby &amp;amp; Rails Date ranges</title><link href="/ruby/date/ranges/2014/12/12/ruby-date-ranges.html" rel="alternate" type="text/html" title="Ruby &amp;amp; Rails Date ranges" /><published>2014-12-12T08:58:00+00:00</published><updated>2014-12-12T08:58:00+00:00</updated><id>/ruby/date/ranges/2014/12/12/ruby-date-ranges</id><content type="html" xml:base="/ruby/date/ranges/2014/12/12/ruby-date-ranges.html">&lt;p&gt;So I found myself wanting to iterate over a date range in Rails. Naively I
+started out doing this:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;days&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;ago&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;today&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;TypeError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;can&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iterate&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ActiveSupport&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;TimeWithZone&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Which of course is wrong, since the expression &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5.days.ago&lt;/code&gt; is not a date.&lt;/p&gt;
+
+&lt;p&gt;Things weren’t entirely obvious. So I broke out irb, and started to experiment.&lt;/p&gt;
+
+&lt;p&gt;First off lets try ranges in plain ruby&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;date&apos;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2014&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;today&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+ &lt;span class=&quot;mi&quot;&gt;2014&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;08&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;2014&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;09&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;2014&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;2014&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;2014&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#&amp;lt;Date: 2014-12-08 ((2457000j,0s,0n),+0s,2299161j)&amp;gt;..#&amp;lt;Date: 2014-12-12 ((2457004j,0s,0n),+0s,2299161j)&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;So that works pretty good - remember to add the parens, or you’ll be having a hard time.&lt;/p&gt;
+
+&lt;p&gt;And in Rails, mixed with the wonders of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ActiveSupport::TimeWithZone&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;days&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;ago&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;today&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;2014&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;07&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;2014&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;08&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;2014&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;09&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;2014&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;2014&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;2014&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Sun&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;07&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Dec&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2014&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Fri&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Dec&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2014&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The lesson learned is&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Always use the same object in the range, don’t mix apples and bananas&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>Kristian Rasmussen</name><email>me@krx.io</email></author><category term="ruby" /><category term="date" /><category term="ranges" /><summary type="html">So I found myself wanting to iterate over a date range in Rails. Naively I started out doing this:</summary></entry><entry><title type="html">Web Development With Elixir</title><link href="/elixir/web/2014/05/22/web-development-with-elixir.html" rel="alternate" type="text/html" title="Web Development With Elixir" /><published>2014-05-22T06:43:00+00:00</published><updated>2014-05-22T06:43:00+00:00</updated><id>/elixir/web/2014/05/22/web-development-with-elixir</id><content type="html" xml:base="/elixir/web/2014/05/22/web-development-with-elixir.html">&lt;p&gt;About a month ago &lt;a href=&quot;https://twitter.com/jamiemhodge&quot;&gt;@jamiemhodge&lt;/a&gt; talked me
+into giving a talk about web developement with &lt;a href=&quot;http://elixir-lang.org&quot;&gt;Elixir&lt;/a&gt;
+for the &lt;a href=&quot;http://copenhagenrb.dk/&quot;&gt;Copenhagen Ruby Brigade&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;So this post contains the recorded talk and links to the code used in the talk.&lt;/p&gt;
+
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;//www.youtube.com/embed/mh6kNxoO19A?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;The source from the talk can be found here:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/iamkristian/web_development_with_elixir_talk&quot;&gt;iamkristian/web_development_with_elixir&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/iamkristian/elixir_commits&quot;&gt;iamkristian/elixir_commits&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/iamkristian/rack_example&quot;&gt;iamkristian/rack_example&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;performance&quot;&gt;Performance&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Language&lt;/th&gt;
+      &lt;th&gt;Options&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Result&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Ruby 2.1.1 MRI&lt;/td&gt;
+      &lt;td&gt;none&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;788 req/s&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Ruby 2.1.1 MRI&lt;/td&gt;
+      &lt;td&gt;puma&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;10700 req/s&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Ruby 2.1.1 MRI&lt;/td&gt;
+      &lt;td&gt;puma -q -t 10 -w 4&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;22356 req/s&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Elixir 0.13.2&lt;/td&gt;
+      &lt;td&gt;Weber&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;23126 req/s&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://gist.github.com/gudmundur/0513a965c1cf6b8a7327&quot;&gt;Elixir 0.13.2&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;Dynamo&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;31295 req/s&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;a href=&quot;https://gist.github.com/gudmundur/0513a965c1cf6b8a7327&quot;&gt;Go&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;53071 req/s&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The talk produced some additional talk on twitter afterwards.
+&lt;a href=&quot;https://twitter.com/gudmundur&quot;&gt;@gudmundur&lt;/a&gt; made a &lt;em&gt;hello world&lt;/em&gt;
+&lt;a href=&quot;https://gist.github.com/gudmundur/0513a965c1cf6b8a7327&quot;&gt;example&lt;/a&gt; in &lt;a href=&quot;http://golang.org/&quot;&gt;Go&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;All tests were performed using&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wrk &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; 10 &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; 400 &amp;lt;url&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;resources-for-learning-more&quot;&gt;Resources for learning more&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://elixirsips.com&quot;&gt;Elixirsips&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://learnyousomeerlang.com/&quot;&gt;Learn You Some Erlang&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://pragprog.com/book/elixir/programming-elixir&quot;&gt;Programming Elixir&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.manning.com/logan/&quot;&gt;Erlang &amp;amp; OTP in Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.exotpbook.com/&quot;&gt;The Little Elixir &amp;amp; OTP Guidebook&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thank you to the &lt;a href=&quot;http://copenhagenrb.dk&quot;&gt;Copenhagen Ruby Brigade&lt;/a&gt; for being an awesome audience.&lt;/p&gt;</content><author><name>Kristian Rasmussen</name><email>me@krx.io</email></author><category term="elixir" /><category term="web" /><summary type="html">About a month ago @jamiemhodge talked me into giving a talk about web developement with Elixir for the Copenhagen Ruby Brigade.</summary></entry><entry><title type="html">Vim registers</title><link href="/vim/2014/04/29/vim-registers.html" rel="alternate" type="text/html" title="Vim registers" /><published>2014-04-29T06:50:00+00:00</published><updated>2014-04-29T06:50:00+00:00</updated><id>/vim/2014/04/29/vim-registers</id><content type="html" xml:base="/vim/2014/04/29/vim-registers.html">&lt;p&gt;So I’m an avid vim user. I just wanted to write this down to remind myself, or
+as &lt;a href=&quot;https://twitter.com/garybernhardt&quot;&gt;Gary Bernhardt&lt;/a&gt; expresses it&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Store it into my muscle memory!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Vim have registers. So when ever you perform an action of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cut&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;paste&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;copy&lt;/code&gt;,
+the selection is stored in a register.&lt;/p&gt;
+
+&lt;h2 id=&quot;chose-your-register&quot;&gt;Chose your register&lt;/h2&gt;
+
+&lt;p&gt;You chose a register with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;&amp;lt;name of register&amp;gt;&lt;/code&gt; and from there you can
+do your motion, yank or whatever action you desire.&lt;/p&gt;
+
+&lt;h2 id=&quot;list-your-registers&quot;&gt;List your registers&lt;/h2&gt;
+
+&lt;p&gt;You can list your register content with&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:reg&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;the-unnamed-register-&quot;&gt;The unnamed register &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;&quot;&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;This is the default register, and vim will use this if you don’t specify a
+register.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-named-register-a--z&quot;&gt;The named register &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;a--&quot;z&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;Vim has a named register for each of the letters in the alphabet. So you can
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;ad&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;ay&lt;/code&gt;, or paste &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;ap&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;the-devnull-register-_&quot;&gt;The /dev/null register &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;_&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;Sometimes you don’t want to store the text you manipulate, if you send it to
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;_&lt;/code&gt; it will not be stored.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-system-clipboard-register-&quot;&gt;The system clipboard register &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;+&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;This will store the text in the default X11 clipboard, pretty handy!&lt;/p&gt;
+
+&lt;h3 id=&quot;the-selection-register-&quot;&gt;The selection register &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;*&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;This will store the text in the X11 selection clipboard, pretty handy! Note this will be the same as the system clipboard on windows or OSX, since there is only one clipboard.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-expression-register-&quot;&gt;The expression register &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;=&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;This register is different, since vim drops into commandline mode, and reads the input from the script you execute.&lt;/p&gt;
+
+&lt;h3 id=&quot;and-the-rest&quot;&gt;And the rest&lt;/h3&gt;
+
+&lt;p&gt;Here are the rest of the registers:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Register&lt;/th&gt;
+      &lt;th&gt;Content&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;#&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Alternate file&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;%&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Current file&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;/&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Last search pattern&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;:&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Last Ex command&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;.&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Last inserted text&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;I hope you’ll enjoy some more productivity in vim using registers!&lt;/p&gt;</content><author><name>Kristian Rasmussen</name><email>me@krx.io</email></author><category term="vim" /><summary type="html">So I’m an avid vim user. I just wanted to write this down to remind myself, or as Gary Bernhardt expresses it</summary></entry><entry><title type="html">Elastic Search - Hacking the Y-combinator</title><link href="/ruby/rails/elastic_search/2014/03/14/elastic_search-hacking-the-y-combinator.html" rel="alternate" type="text/html" title="Elastic Search - Hacking the Y-combinator" /><published>2014-03-14T10:32:41+00:00</published><updated>2014-03-14T10:32:41+00:00</updated><id>/ruby/rails/elastic_search/2014/03/14/elastic_search-hacking-the-y-combinator</id><content type="html" xml:base="/ruby/rails/elastic_search/2014/03/14/elastic_search-hacking-the-y-combinator.html">&lt;p&gt;I’ve wanted to dive into Elastic search and see what it does for sometime. Mostly to see how it was working with it.&lt;/p&gt;
+
+&lt;h2 id=&quot;search-basics&quot;&gt;Search Basics&lt;/h2&gt;
+
+&lt;p&gt;When you first dive into search, there’s a couple of concepts you need to know about.&lt;/p&gt;
+
+&lt;h3 id=&quot;documents&quot;&gt;Documents&lt;/h3&gt;
+
+&lt;p&gt;We denormalize our data into documents. Typical use cases for applying a search engine is on heavily normalized data, that needs to be combined into arbitrary queries, that would make ordinary sql statements too slow or complex, thus joining multiple tables, to only return a few columns.&lt;/p&gt;
+
+&lt;p&gt;Other usecases could be fulltext search or geospatial data. Documents are represented by JSON, which makes it a delight to work with.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-index&quot;&gt;The index&lt;/h3&gt;
+
+&lt;p&gt;Documents are stored in an index. The index is what we search in. As the name state, it is fast to lookup documents in it. In Eleastic Search, the index is a &lt;a href=&quot;http://lucene.apache.org&quot;&gt;lucene&lt;/a&gt; based index. The greater part of the index is typically loaded into memory, but persisted to disc at index time. So it can be reloaded in case of a server failure.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-schema&quot;&gt;The schema&lt;/h3&gt;
+
+&lt;p&gt;The document structure of the index is defined by a schema. In Elastic Search the schema is dynamic, so it’s possible to virtually throw anything at it.&lt;/p&gt;
+
+&lt;p&gt;In other lucene based search engines i.e. &lt;a href=&quot;http://solr.apache.org&quot;&gt;Solr&lt;/a&gt;, the schema is static and singular to the server instance. This means the server will have to be reloaded in order for a schema change to take place, and only one index is served. This clearly has its disadvantages.&lt;/p&gt;
+
+&lt;p&gt;Te have some structure to the index, we provide a mappings. Which basically define the data types our document should consist of.&lt;/p&gt;
+
+&lt;p&gt;Here I’ve listed an entry for one of the documents.&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;_index&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ycombinator&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;_type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;items&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;_id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;s6T7pwLNS8y1r4aUQXsoEA&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;_score&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;_source&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;identifier&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;7375376&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;author&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;summerdown2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;content&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Very addictive and lots of fun :)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;link&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;item?id=7375376&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;points&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;parent&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7373566&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;indexes-shards-replica-nodes-clusters&quot;&gt;Indexes, Shards, Replica, Nodes, Clusters&lt;/h3&gt;
+
+&lt;p&gt;Elastic Search operates with multiple indexes. A single index is made of shards, which can be scattered over multiple nodes in a cluster. Each shard can have a replica, which is an exact copy of a shard. This is used to enhance search performance, and as duplication in case of failure.&lt;/p&gt;
+
+&lt;p&gt;Indexes support basic create and delete operations on the fly.&lt;/p&gt;
+
+&lt;h2 id=&quot;indexing&quot;&gt;Indexing&lt;/h2&gt;
+
+&lt;p&gt;So getting data into the search engine is actually a project on its own. Basically there are two ways of populating an index.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Push data to elastic search, when it is modified&lt;/li&gt;
+  &lt;li&gt;Query the database for delta changes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The first strategy works nicely if you have a monolithic system of one. If you have multiple sub systems that interact with your data, it would make sense to query the database for deltas.&lt;/p&gt;
+
+&lt;p&gt;The indexing task for this project is querying the database, because faults might appear when parsing the ycombinator for data.&lt;/p&gt;
+
+&lt;p&gt;Looking at the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Item&lt;/code&gt; the record boils down to&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;elastic&apos;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Item&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ActiveRecord&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Base&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;re_index&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;elastic&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Elastic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;instance&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ItemSerializer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_json&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;elastic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;add_item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;The serializer is a simple &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ActiveModel::Serializer&lt;/code&gt; which removes the root element and adds the attributes I want in the index.&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ItemSerializer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ActiveModel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Serializer&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;false&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;attributes&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:identifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:author&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:points&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:parent&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The interaction with ElasticSearch is wrapped in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Elastic&lt;/code&gt; class.&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;elasticsearch&apos;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Elastic&lt;/span&gt;
+  &lt;span class=&quot;kp&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Singleton&lt;/span&gt;
+
+  &lt;span class=&quot;c1&quot;&gt;# This creates the index and types at&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;# &apos;/name/type/&apos;&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;# making the documents available&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;create_index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;client&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;index&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;index: &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;type: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;body: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;body&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;c1&quot;&gt;# Adds documents of type items to the index ycombinator&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;add_item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;create_index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;ycombinator&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;items&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;c1&quot;&gt;# Creates the ElasticSearch client&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;client&lt;/span&gt;
+    &lt;span class=&quot;no&quot;&gt;Elasticsearch&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Client&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;log: &lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;queries&quot;&gt;Queries&lt;/h2&gt;
+
+&lt;p&gt;Finding things again in the index is nicely done using the lucene syntax.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Basic syntax
+http://localhost:9200/ycombinator/items/_search?q=&amp;lt;query&amp;gt;
+
+Giving query the following:
+author:gebe        # Will return documents with author gebe
++author:gebe       # Will make author=gebe mandatory for results
+-author:gebe       # Will make exclude author gebe from results
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Querying throug the gem would add this to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Elastic&lt;/code&gt; class&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{})&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;client&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;index: &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;ycombinator&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;type: &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;items&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;body: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;A search for the string &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nice&lt;/code&gt; in the content would look like this&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;es&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;query: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;match: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;content: &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;nice&apos;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;facets&quot;&gt;Facets&lt;/h2&gt;
+
+&lt;p&gt;Facets are a way of summerizing on the data in the index. Lets assume I want to find how many items an author have created, I could as the index to facet over authors.&lt;/p&gt;
+
+&lt;p&gt;This would change our query to this&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;es&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;query: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;match: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;content: &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;nice&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}},&lt;/span&gt;
+            &lt;span class=&quot;ss&quot;&gt;facets: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;tags: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;terms: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;field: &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;author&apos;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This actually combines the search result with the facets.&lt;/p&gt;
+
+&lt;h2 id=&quot;more&quot;&gt;More&lt;/h2&gt;
+
+&lt;p&gt;This is far from an exhaustive example of ElasticSearch. More a sort of scratching the surface.&lt;/p&gt;
+
+&lt;p&gt;If you want to check out the code I used, you can find it on &lt;a href=&quot;http://github.com/iamkristian/elastic-talk&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;</content><author><name>Kristian Rasmussen</name><email>me@krx.io</email></author><category term="ruby" /><category term="rails" /><category term="elastic_search" /><summary type="html">I’ve wanted to dive into Elastic search and see what it does for sometime. Mostly to see how it was working with it.</summary></entry><entry><title type="html">simple_form lessons</title><link href="/ruby/rails/simple_form/2014/03/07/simple_form-lessons.html" rel="alternate" type="text/html" title="simple_form lessons" /><published>2014-03-07T06:32:41+00:00</published><updated>2014-03-07T06:32:41+00:00</updated><id>/ruby/rails/simple_form/2014/03/07/simple_form-lessons</id><content type="html" xml:base="/ruby/rails/simple_form/2014/03/07/simple_form-lessons.html">&lt;p&gt;So I’ve messed with &lt;a href=&quot;https://github.com/plataformatec/simple_form&quot;&gt;simple_form&lt;/a&gt;, another great project from &lt;a href=&quot;https://github.com/josevalim&quot;&gt;José Valim&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’ve gathered some of my lessons learned in this post. First of all I’m skipping the basics, since that’s covered just fine in the &lt;a href=&quot;https://github.com/plataformatec/simple_form&quot;&gt;README&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;notes-on-configuration&quot;&gt;Notes On Configuration&lt;/h2&gt;
+
+&lt;p&gt;Remember to flip your rails server, when you do configuration changes. They will not be loaded on the fly in development.&lt;/p&gt;
+
+&lt;h2 id=&quot;wrappers&quot;&gt;Wrappers&lt;/h2&gt;
+
+&lt;p&gt;Wrappers was one of the things I had to dig in to, before figuring out how they work. The documentation explains how to set them up, but not really how they work.&lt;/p&gt;
+
+&lt;p&gt;So a wrapper is a configuration set that tells simple_form, how to render the components your form use. But what does that mean?&lt;/p&gt;
+
+&lt;p&gt;Let’s look at a simple wrapper, looking something like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;wrappers&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:simple&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;tag: :div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;error_class: :field_error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;class: :form_field&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:html5&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:label&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:input&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:hint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  &lt;span class=&quot;ss&quot;&gt;wrap_with: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;tag: :span&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;class: :hint&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;wrap_with: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;tag: :span&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;class: :error&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;When you use this wrapper in a form, like this&lt;/p&gt;
+
+&lt;div class=&quot;language-erb highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Here the wrapper is applied to all of the elements of the form
+&lt;span class=&quot;cp&quot;&gt;&amp;lt;%=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;simple_form_for&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@profile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;wrapper: :simple&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;%&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;cp&quot;&gt;&amp;lt;%=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:first_name&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;%&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;&amp;lt;%&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;%&amp;gt;&lt;/span&gt;
+
+# Here it is only applied to the single field
+&lt;span class=&quot;cp&quot;&gt;&amp;lt;%=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;simple_form_for&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@profile&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;%&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;cp&quot;&gt;&amp;lt;%=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:first_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;wrapper: :simple&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;%&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;&amp;lt;%&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;%&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Yes yes, but what does it do? Well … It wraps. Our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;first_name&lt;/code&gt; input field friend from above, will be wrapped, like this&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;form_field string required profile_first_name&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;label&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;string required control-label&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;for=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;profile_first_name&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    First name&lt;span class=&quot;nt&quot;&gt;&amp;lt;abbr&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;required&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;*&lt;span class=&quot;nt&quot;&gt;&amp;lt;/abbr&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/label&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;string required&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;profile_first_name&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;profile[first_name]&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;size=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;50&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;So there’s a lot going on, and simple_form is indeed a powerful ally in maintaning forms across an application.&lt;/p&gt;
+
+&lt;p&gt;You can even nest the wrappers.&lt;/p&gt;
+
+&lt;h2 id=&quot;custom-input&quot;&gt;Custom input&lt;/h2&gt;
+
+&lt;p&gt;Custom input types goes into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;app/inputs&lt;/code&gt; folder. They will be loaded by simple_form.&lt;/p&gt;
+
+&lt;p&gt;Let’s take a look at a simple example. I want to add a weight type, thus appending the text &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;kg&lt;/code&gt; to the input field.&lt;/p&gt;
+
+&lt;p&gt;It is as simple as this&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;WeightInput&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;SimpleForm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Inputs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;NumericInput&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;input&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;out&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;&apos;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;out&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;super&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Render what the super class has to offer&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;out&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;template&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;content_tag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:span&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;I18n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;simple_form.units.defaults.kg&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;html_safe&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can build your output, prepending, appending and pretty much do what you like with the fields.&lt;/p&gt;
+
+&lt;p&gt;The above turns into this&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;numeric weight optional&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;number&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;...&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;span&amp;gt;&lt;/span&gt;Kg&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;More to come…&lt;/p&gt;</content><author><name>Kristian Rasmussen</name><email>me@krx.io</email></author><category term="ruby" /><category term="rails" /><category term="simple_form" /><summary type="html">So I’ve messed with simple_form, another great project from José Valim.</summary></entry></feed>
