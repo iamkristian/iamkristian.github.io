@@ -2,6 +2,9 @@
 layout: post
 title:  "Turn off echo in pry or irb"
 date:   2015-10-27 13:30
+image: IMG_6547.png
+image_thumb: IMG_6547_thumb.png
+subtitle: The one about turning off echo in Pry or Irb
 categories: ruby pry irb
 ---
 When you do something in pry or irb that returns a looong result, sometimes

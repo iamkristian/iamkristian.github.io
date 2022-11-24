@@ -2,8 +2,8 @@
 layout: post
 date:   2022-05-16 09:00:00
 title: Bekræftigelser
-image: IMG_7153.png
-image_thumb: IMG_7153_thumb.png
+image: IMG_7162.png
+image_thumb: IMG_7162_thumb.png
 subtitle: Den om bekræftigelser og affirmations
 categories: life
 ---

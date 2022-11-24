@@ -2,6 +2,9 @@
 layout: post
 title:  "ctags_ruby gem"
 date:   2014-01-16 09:00:00
+image: IMG_6049.png
+image_thumb: IMG_6049_thumb.png
+subtitle: The one about the ctags ruby gem
 categories: ruby
 ---
 I created a [gem](https://github.com/iamkristian/ctags_ruby) for doing ctags on my ruby project files and gem dependencies. Basically it will find all ruby files in your project, and run ctags on them. Then it will dive into your ```Gemfile``` and trawl through the source files of each gem.

@@ -2,6 +2,9 @@
 layout: post
 title:  "simple_form lessons"
 date:   2014-03-07 06:32:41
+image: IMG_6454.png
+image_thumb: IMG_6454_thumb.png
+subtitle: The one about simple form lessons
 categories: ruby rails simple_form
 ---
 So I've messed with [simple_form](https://github.com/plataformatec/simple_form), another great project from [José Valim](https://github.com/josevalim).

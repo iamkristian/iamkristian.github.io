@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Vim registers"
-subtitle: "this is a test"
 date:   2014-04-29 06:50
+image: IMG_7154.png
+image_thumb: IMG_7154_thumb.png
+subtitle: The one about vim registers
 categories: vim
 ---
 So I'm an avid vim user. I just wanted to write this down to remind myself, or

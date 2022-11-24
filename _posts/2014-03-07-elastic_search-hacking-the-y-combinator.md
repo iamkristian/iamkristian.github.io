@@ -2,6 +2,9 @@
 layout: post
 title:  "Elastic Search - Hacking the Y-combinator"
 date:   2014-03-14 10:32:41
+image: IMG_6002.png
+image_thumb: IMG_6002_thumb.png
+subtitle: The one about elastic search
 categories: ruby rails elastic_search
 ---
 

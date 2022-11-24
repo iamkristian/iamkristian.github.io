@@ -12,23 +12,22 @@ fish
     {%- if page.list_title -%}
       <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
+    {% comment %}
     <ul class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for post in paginator.posts -%}
       <li>
         <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
+          <a class="post-thumb-link" href="{{ post.url | relative_url }}">
             {%- if post.image_thumb -%}
-            <img src="/assets/images/{{ post.image_thumb }}" alt=""/>
+            <img class="post-thumb" src="/assets/images/{{ post.image_thumb }}" alt=""/>
             {% endif %}
-
-            <br/>
-            {{ post.title | escape }}
           </a>
-        </h3>
+          <h3 class="post-title">
+            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </h3>
         {%- if post.subtitle -%}
-        <p>{{ post.subtitle }}</p>
+        <p class="post-subtitle">{{ post.subtitle }}</p>
         {%- endif -%}
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
@@ -36,6 +35,31 @@ fish
       </li>
       {%- endfor -%}
     </ul>
+    {% endcomment %}
+
+    <div class="post-wrapper">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      {%- for post in paginator.posts -%}
+      <div class="post">
+        {%- if post.image_thumb -%}
+        <a class="post-thumb-link" href="{{ post.url | relative_url }}">
+          <img class="post-thumb" src="/assets/images/{{ post.image_thumb }}" alt=""/>
+        </a>
+        {% endif %}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3 class="post-title">
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h3>
+        {%- if post.subtitle -%}
+        <p class="post-subtitle">{{ post.subtitle }}</p>
+        {%- endif -%}
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </div>
+      {%- endfor -%}
+
+    </div>
 
     {% if paginator.total_pages > 1 %}
       <div class="pager">

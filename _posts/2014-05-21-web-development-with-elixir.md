@@ -2,6 +2,9 @@
 layout: post
 title:  "Web Development With Elixir"
 date:   2014-05-22 06:43:00
+image: IMG_7156.png
+image_thumb: IMG_7156_thumb.png
+subtitle: The one about web development with Elixir
 categories: elixir web
 ---
 About a month ago [@jamiemhodge](https://twitter.com/jamiemhodge) talked me

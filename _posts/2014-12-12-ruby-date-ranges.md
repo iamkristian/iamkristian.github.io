@@ -2,6 +2,9 @@
 layout: post
 title:  "Ruby & Rails Date ranges"
 date:   2014-12-12 08:58:00
+image: IMG_9991.png
+image_thumb: IMG_9991_thumb.png
+subtitle: The one about vim registers
 categories: ruby date ranges
 ---
 

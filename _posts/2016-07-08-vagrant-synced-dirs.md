@@ -2,6 +2,9 @@
 layout: post
 title:  "Vagrant synced directories"
 date:   2016-07-08 07:00
+image: IMG_6488.png
+image_thumb: IMG_6488_thumb.png
+subtitle: The one about vagrant and synced directories
 categories: vagrant synced dirs
 ---
 I've often been wanting to mount a dir on the host system, when spinning up a

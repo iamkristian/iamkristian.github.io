@@ -1,13 +1,17 @@
 ---
-layout: default
+layout: page
+image: IMG_2142.png
 title: "About me"
 ---
-# About me
+### HEY THERE!
 
-Hi! I'm Kristian. Hacker, dad, and writer. I write and share code about ruby
-and elixir, and find search engines pretty facinating too!
+# I'm Kristian
 
-This site mainly serves as a creative outlet for thoughts, learnings and
-writings on various technical topics, mainly focused around
-ruby, elixir, search, and unix. Occasionally I might throw a post on DIY
-projects, or projects I'm currently focusing on.
+Dad, kayaker, writer, hacker and loads of other things. I'm pretty good at
+walking too. Anyhow - I write and share code about ruby, elixir, UNIX
+and cloud. On this site, I share all the stuff that's to technical for
+other places. Mostly in English and Danish.
+I earn a living writing code, facilitating as an Independent Consultant - Mostly in finance, media and insurance.
+
+Oh yeah - that's me in the top photo - paddling in rough water. The wind is
+about 10-12 m/s, the waves are between 1-2.5 meters. Great fun!

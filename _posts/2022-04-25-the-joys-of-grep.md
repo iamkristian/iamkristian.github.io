@@ -2,6 +2,9 @@
 layout: post
 date:   2022-04-25 09:00:00
 title: The Joys of Grep
+image: IMG_7153.png
+image_thumb: IMG_7153_thumb.png
+subtitle: The one about the joys of grep
 categories: grep unix
 ---
 I had this problem where I needed to match a lot of ids (approx. 10.000) against a data file. It would take too long time to write a program that validated the ids precense. What to do?
