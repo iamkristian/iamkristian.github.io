@@ -6,6 +6,34 @@ layout: default
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
+  {%- if page.image -%}
+    <img class="header-image" src="/assets/images/{{ page.image }}" alt=""/>
+  {% endif %}
 
   {{ content }}
+
+  <h2>Latest posts</h2>
+  <div class="post-wrapper">
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    {%- for post in site.posts limit: 3 -%}
+    <div class="post">
+      {%- if post.image_thumb -%}
+      <a class="post-thumb-link" href="{{ post.url | relative_url }}">
+        <img class="post-thumb" src="/assets/images/{{ post.image_thumb }}" alt=""/>
+      </a>
+      {% endif %}
+      <span class="post-meta">{{ post.date | date: date_format }}</span>
+      <h3 class="post-title">
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </h3>
+      {%- if post.subtitle -%}
+      <p class="post-subtitle">{{ post.subtitle }}</p>
+      {%- endif -%}
+      {%- if site.show_excerpts -%}
+        {{ post.excerpt }}
+      {%- endif -%}
+    </div>
+    {%- endfor -%}
+    <div class="post"><a href="/blog">Read more</a></div>
+  </div>
 </div>

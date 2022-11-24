@@ -11,4 +11,3 @@ pagination:
   enabled: true
 title: "Blog"
 ---
-here is the blog

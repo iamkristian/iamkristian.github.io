@@ -7,8 +7,6 @@ image_thumb: IMG_7099_thumb.png
 subtitle: The one about git branch renaming
 categories: life
 ---
-#
-
 Sometimes I need to rename a git branch because I had to break down the feature in smaller bits or other circumstances that somehow require a revision name change.
 
 ## Local Rename
