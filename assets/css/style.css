@@ -323,4 +323,10 @@ table td { border: 1px solid var(--solarized-mono1); }
 /** Grid helpers */
 @media screen and (min-width: 800px) { .one-half { width: calc(50% - (30px / 2)); } }
 
+.post-wrapper { display: flex; flex-direction: column; flex-flow: row wrap; justify-content: start; margin-left: auto; margin-right: auto; }
+
+.post-wrapper .post { display: inline-block; margin-left: 15px; max-width: 350px; }
+
+.post-wrapper .post .post-title { overflow-wrap: anywhere; margin-bottom: 10px; }
+
 /*# sourceMappingURL=style.css.map */

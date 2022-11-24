@@ -3,20 +3,22 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>This is a test of posts in Jekyll! | krx.io</title>
+<title>Git - rename branch locally and remote | krx.io</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="This is a test of posts in Jekyll!" />
+<meta property="og:title" content="Git - rename branch locally and remote" />
 <meta name="author" content="Kristian Rasmussen" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="def test puts &quot;This is a test&quot; 10.times do puts &quot;blah&quot; end end" />
-<meta property="og:description" content="def test puts &quot;This is a test&quot; 10.times do puts &quot;blah&quot; end end" />
+<meta name="description" content="#" />
+<meta property="og:description" content="#" />
 <meta property="og:site_name" content="krx.io" />
+<meta property="og:image" content="/IMG_7099.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2014-01-09T09:54:41+00:00" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="This is a test of posts in Jekyll!" />
+<meta property="article:published_time" content="2020-06-30T09:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="/IMG_7099.png" />
+<meta property="twitter:title" content="Git - rename branch locally and remote" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kristian Rasmussen"},"dateModified":"2014-01-09T09:54:41+00:00","datePublished":"2014-01-09T09:54:41+00:00","description":"def test puts &quot;This is a test&quot; 10.times do puts &quot;blah&quot; end end","headline":"This is a test of posts in Jekyll!","mainEntityOfPage":{"@type":"WebPage","@id":"/jekyll/update/2014/01/09/this-is-a-test-of-posts.html"},"url":"/jekyll/update/2014/01/09/this-is-a-test-of-posts.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kristian Rasmussen"},"dateModified":"2020-06-30T09:00:00+00:00","datePublished":"2020-06-30T09:00:00+00:00","description":"#","headline":"Git - rename branch locally and remote","image":"/IMG_7099.png","mainEntityOfPage":{"@type":"WebPage","@id":"/life/2020/06/30/Git-rename-branch-locally-and-remote.html"},"url":"/life/2020/06/30/Git-rename-branch-locally-and-remote.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="krx.io" />
 </head>
@@ -42,33 +44,50 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">This is a test of posts in Jekyll!</h1>
-    <p class="post-meta"><time class="dt-published" datetime="2014-01-09T09:54:41+00:00" itemprop="datePublished">
-        Jan 9, 2014
-      </time></p>
+    <h1 class="post-title p-name" itemprop="name headline">Git - rename branch locally and remote</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2020-06-30T09:00:00+00:00" itemprop="datePublished">
+        Jun 30, 2020
+      </time></p><img class="post-image" src="/assets/images/IMG_7099.png" alt=""/>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">test</span>
-  <span class="nb">puts</span> <span class="s2">"This is a test"</span>
-  <span class="mi">10</span><span class="p">.</span><span class="nf">times</span> <span class="k">do</span>
-    <span class="nb">puts</span> <span class="s2">"blah"</span>
-  <span class="k">end</span>
-<span class="k">end</span>
+    <p>#</p>
+
+<p>Sometimes I need to rename a git branch because I had to break down the feature in smaller bits or other circumstances that somehow require a revision name change.</p>
+
+<h2 id="local-rename">Local Rename</h2>
+<p>So how to rename the branch locally? It’s a 2 step process:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Checkout the branch you want to rename</span>
+git co &lt;old branch name&gt;
+
+<span class="c"># Now rename the branch</span>
+git branch <span class="nt">-m</span> &lt;new branch name&gt;
+
+<span class="c"># There is also a shortcut</span>
+git branch <span class="nt">-m</span> &lt;old branch name&gt; &lt;new branch name&gt;
 </code></pre></div></div>
 
-<figure class="highlight"><pre><code class="language-elixir" data-lang="elixir"><span class="k">defmodule</span> <span class="no">MyModule</span>
-  <span class="k">def</span> <span class="n">my_method</span><span class="p">(</span><span class="n">_form</span><span class="p">,</span> <span class="n">args</span><span class="p">)</span>
-  <span class="k">end</span>
-<span class="k">end</span></code></pre></figure>
+<p>You can verify the rename is succesful with this</p>
 
-<h2 id="and-a-subtitle">And a subtitle</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch <span class="nt">--list</span>
+</code></pre></div></div>
 
-<ul>
-  <li>Todo lists</li>
-</ul>
+<h2 id="remote-rename">Remote Rename</h2>
+<p>Once the local rename is successful, the rename of the remote branch needs to be done. It isn’t possible to rename a remote branch, but removing it and pushing the local branch in the new name is.</p>
 
-  </div><a class="u-url" href="/jekyll/update/2014/01/09/this-is-a-test-of-posts.html" hidden></a>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Remove the old branch</span>
+git push origin <span class="nt">--delete</span> &lt;old branch name&gt;
+git push origin :old_branch_name new_branch_name
+
+<span class="c"># I learned if I just push the new branch it will push to # the old name. Therefore if I use tracking I must unset # the upstream branch</span>
+git branch <span class="nt">--unset-upstream</span>
+
+<span class="c"># Then I can push the new branch</span>
+git push origin <span class="nt">-u</span> &lt;new branch name&gt;
+</code></pre></div></div>
+
+  </div><a class="u-url" href="/life/2020/06/30/Git-rename-branch-locally-and-remote.html" hidden></a>
 </article>
 
       </div>
