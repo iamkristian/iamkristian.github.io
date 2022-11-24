@@ -325,8 +325,10 @@ table td { border: 1px solid var(--solarized-mono1); }
 
 .post-wrapper { display: flex; flex-direction: column; flex-flow: row wrap; justify-content: start; margin-left: auto; margin-right: auto; }
 
-.post-wrapper .post { display: inline-block; margin-left: 15px; max-width: 350px; }
+.post-wrapper .post { display: inline-block; margin-right: 15px; max-width: 350px; }
 
 .post-wrapper .post .post-title { overflow-wrap: anywhere; margin-bottom: 10px; }
+
+.header-image { margin-bottom: 15px; }
 
 /*# sourceMappingURL=style.css.map */
