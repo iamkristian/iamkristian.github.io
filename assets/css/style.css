@@ -329,6 +329,12 @@ table td { border: 1px solid var(--solarized-mono1); }
 
 .post-wrapper .post .post-title { overflow-wrap: anywhere; margin-bottom: 10px; }
 
-.header-image { margin-bottom: 15px; }
+.header-image { margin-bottom: 30px; }
+
+.home-latest { margin-top: 15px; }
+
+.home-content blockquote { margin-bottom: 30px; }
+
+.home-content blockquote p { margin-bottom: 5px; }
 
 /*# sourceMappingURL=style.css.map */
