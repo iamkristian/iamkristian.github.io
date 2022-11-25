@@ -10,9 +10,11 @@ layout: default
     <img class="header-image" src="/assets/images/{{ page.image }}" alt=""/>
   {% endif %}
 
+  <div class="home-content">
   {{ content }}
+  </div>
 
-  <h2>Latest posts</h2>
+  <h2 class="home-latest">Latest posts</h2>
   <div class="post-wrapper">
     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
     {%- for post in site.posts limit: 3 -%}

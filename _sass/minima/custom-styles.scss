@@ -20,5 +20,18 @@
 }
 
 .header-image {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+.home-latest {
+  margin-top: 15px;
+}
+
+.home-content {
+  blockquote {
+    margin-bottom: 30px;
+    p {
+      margin-bottom: 5px;
+    }
+  }
 }
