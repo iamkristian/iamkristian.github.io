@@ -6,7 +6,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: home
-image: IMG_0134.png
+image: IMG_0142.png
 title: "Hi!"
 ---
 And welcome - to my corner of the internet (that line is deliberately corny)
