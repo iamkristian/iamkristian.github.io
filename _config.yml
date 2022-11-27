@@ -3,9 +3,9 @@ author:
   name: Kristian Rasmussen
   email: me+blog@krx.io
 description: > # this means to ignore newlines until "show_excerpts:"
- I can't promise any regular updates. I usually write when I'm in the mood or
- have something exciting to share. Topics range from code - Ruby, Elixir,
- Javascript, thoughts and what else is on my mind.
+  I can promise absolute irregular updates. I usually write when
+  I'm in the mood or have something exciting to share. Topics range
+  from code - Ruby, Elixir, Javascript, thoughts and what else is on my mind.
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
