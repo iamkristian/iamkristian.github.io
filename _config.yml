@@ -21,7 +21,7 @@ minima:
     - { platform: instagram,      user_url: "https://www.instagram.com/iamkristian" }
     - { platform: linkedin,       user_url: "https://www.linkedin.com/in/iamkristian" }
     - { platform: youtube,        user_url: "https://www.youtube.com/jekyll" }
-    - { platform: rss,            user_url: "https://iamkristian.github.io/feed.xml" }
+    - { platform: rss,            user_url: "https://krx.io/feed.xml" }
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
