@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2023-03-24T03:05:16+00:00</updated><id>/feed.xml</id><title type="html">krx.io</title><subtitle>I can promise absolute irregular updates. I usually write when I&apos;m in the mood or have something exciting to share. Topics range from code - Ruby, Elixir, Javascript, thoughts and what else is on my mind.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2023-03-24T09:36:15+00:00</updated><id>/feed.xml</id><title type="html">krx.io</title><subtitle>I can promise absolute irregular updates. I usually write when I&apos;m in the mood or have something exciting to share. Topics range from code - Ruby, Elixir, Javascript, thoughts and what else is on my mind.
 </subtitle><author><name>Kristian Rasmussen</name><email>me plus blog at krx dot io</email></author><entry><title type="html">Kontor koma</title><link href="/kontor/storrum/st%C3%B8j/2022/08/15/kontor-koma.html" rel="alternate" type="text/html" title="Kontor koma" /><published>2022-08-15T13:30:00+00:00</published><updated>2022-08-15T13:30:00+00:00</updated><id>/kontor/storrum/st%C3%B8j/2022/08/15/kontor-koma</id><content type="html" xml:base="/kontor/storrum/st%C3%B8j/2022/08/15/kontor-koma.html">&lt;p&gt;Storrums kontoret er desværre kommet for at blive. Det er den hårfine grænse, hvor man konstant balancerer ud og ind af koncentrationen. Jeg genfinder lige nøjagtig tråden i den problemstilling, jeg sidder med og så taber det hele på gulvet, fordi der kommer en horde af trampende høje hæle, eller knævrende skjorteærmer gående forbi. Det er enten det, eller også holder skrivebordene på den anden side gangen stå op møde med 2-3 andre kolleger, hvor der bliver diskuteret alt fra fodbold resultater til, hvad der mon er til frokost i kantinen. Kan jeg rejse mig op og skråle: &lt;em&gt;“Så hold dog for helvede kæft!”&lt;/em&gt; ud over det hele? Nej vel - Det bliver der også set skævt til.&lt;/p&gt;
 
 &lt;p&gt;Hvad kan jeg så i grunden? Jeg må indrømme at jeg søgte hjælp på min lydbogshylde, for jeg var kørt ubehjælpeligt fast i frustration. Her faldt jeg over Pia Hauges bog &lt;em&gt;“Kontor Koma - fra støj til fordybelse i dit arbejde”&lt;/em&gt;. Et ganske formidabelt stykke tekst, som sætter fokus på netop støj i storrums kontoret og hvor skadeligt det er. Anyways - det gav mig nogle gode tips som jeg har tænkt mig at benytte mig af fremover.&lt;/p&gt;
@@ -57,7 +57,25 @@
 
 &lt;blockquote&gt;
   &lt;p&gt;Hold kritik på dit eget skrivebord&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>Kristian Rasmussen</name><email>me plus blog at krx dot io</email></author><category term="life" /><summary type="html">Når hverdagen bliver træls og svær at komme igennem hos en kunde, så læner jeg mig op af disse slogans, eller affirmations som de også hedder på engelsk.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/IMG_7162.png" /><media:content medium="image" url="/IMG_7162.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Joys of Grep</title><link href="/grep/unix/2022/04/25/the-joys-of-grep.html" rel="alternate" type="text/html" title="The Joys of Grep" /><published>2022-04-25T09:00:00+00:00</published><updated>2022-04-25T09:00:00+00:00</updated><id>/grep/unix/2022/04/25/the-joys-of-grep</id><content type="html" xml:base="/grep/unix/2022/04/25/the-joys-of-grep.html">&lt;p&gt;I had this problem where I needed to match a lot of ids (approx. 10.000) against a data file. It would take too long time to write a program that validated the ids precense. What to do?&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>Kristian Rasmussen</name><email>me plus blog at krx dot io</email></author><category term="life" /><summary type="html">Når hverdagen bliver træls og svær at komme igennem hos en kunde, så læner jeg mig op af disse slogans, eller affirmations som de også hedder på engelsk.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/IMG_7162.png" /><media:content medium="image" url="/IMG_7162.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Art Of Saying NO To Your Boss</title><link href="/life/worklife-balance/2022/04/27/the-art-of-saying-no-to-your-boss.html" rel="alternate" type="text/html" title="The Art Of Saying NO To Your Boss" /><published>2022-04-27T09:00:00+00:00</published><updated>2022-04-27T09:00:00+00:00</updated><id>/life/worklife-balance/2022/04/27/the-art-of-saying-no-to-your-boss</id><content type="html" xml:base="/life/worklife-balance/2022/04/27/the-art-of-saying-no-to-your-boss.html">&lt;p&gt;We’ve all been in a situation, where your boss wants you to stay after hours and fix some new burning issue, while he takes off to be with his family.&lt;/p&gt;
+
+&lt;p&gt;The reward of being a good worker bee is usually more work. - Never forget that.&lt;/p&gt;
+
+&lt;p&gt;So why is it we keep accepting this predicament? I think &lt;a href=&quot;https://twitter.com/brenebrown&quot;&gt;@Brene Brown&lt;/a&gt; said it best&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;It takes courage to say &lt;strong&gt;yes&lt;/strong&gt; to &lt;strong&gt;&lt;em&gt;rest&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;play&lt;/em&gt;&lt;/strong&gt; in a culture where exhaustion is seen as a status symbol&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Pleasing, accepting, bending over and continuing to let go of your values with recharging, family, and not taking good care of yourself is the norm today.&lt;/p&gt;
+
+&lt;p&gt;If the people you work for cannot comprehend, you’re not a machine. You need to show them. My philosophy is if your employer is committed to working with you, he also commits to respecting your wishes. Otherwise it is time to move on, or create your own business.&lt;/p&gt;
+
+&lt;p&gt;If I have been burning the midnight oil in a week I cannot produce the same the following weeks. I need to recharge. I need to play. Without play I loose my creative edge. I burn out and get more annoyed with my surroundings.&lt;/p&gt;
+
+&lt;p&gt;So lets follow by example of Brene Brown, and stop being exhausted.&lt;/p&gt;
+
+&lt;p&gt;- and maybe, just maybe go play a little.&lt;/p&gt;</content><author><name>Kristian Rasmussen</name><email>me plus blog at krx dot io</email></author><category term="life" /><category term="worklife-balance" /><summary type="html">We’ve all been in a situation, where your boss wants you to stay after hours and fix some new burning issue, while he takes off to be with his family.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/IMG_0644.png" /><media:content medium="image" url="/IMG_0644.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Joys of Grep</title><link href="/grep/unix/2022/04/25/the-joys-of-grep.html" rel="alternate" type="text/html" title="The Joys of Grep" /><published>2022-04-25T09:00:00+00:00</published><updated>2022-04-25T09:00:00+00:00</updated><id>/grep/unix/2022/04/25/the-joys-of-grep</id><content type="html" xml:base="/grep/unix/2022/04/25/the-joys-of-grep.html">&lt;p&gt;I had this problem where I needed to match a lot of ids (approx. 10.000) against a data file. It would take too long time to write a program that validated the ids precense. What to do?&lt;/p&gt;
 
 &lt;p&gt;The Unix shell to the rescue. I remembered &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;grep&lt;/code&gt; have some of the functionality I wanted.&lt;/p&gt;
 
@@ -266,87 +284,4 @@ for the &lt;a href=&quot;http://copenhagenrb.dk/&quot;&gt;Copenhagen Ruby Brigad
   &lt;li&gt;&lt;a href=&quot;http://www.exotpbook.com/&quot;&gt;The Little Elixir &amp;amp; OTP Guidebook&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Thank you to the &lt;a href=&quot;http://copenhagenrb.dk&quot;&gt;Copenhagen Ruby Brigade&lt;/a&gt; for being an awesome audience.&lt;/p&gt;</content><author><name>Kristian Rasmussen</name><email>me plus blog at krx dot io</email></author><category term="elixir" /><category term="web" /><summary type="html">About a month ago @jamiemhodge talked me into giving a talk about web developement with Elixir for the Copenhagen Ruby Brigade.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/IMG_7156.png" /><media:content medium="image" url="/IMG_7156.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Vim registers</title><link href="/vim/2014/04/29/vim-registers.html" rel="alternate" type="text/html" title="Vim registers" /><published>2014-04-29T06:50:00+00:00</published><updated>2014-04-29T06:50:00+00:00</updated><id>/vim/2014/04/29/vim-registers</id><content type="html" xml:base="/vim/2014/04/29/vim-registers.html">&lt;p&gt;So I’m an avid vim user. I just wanted to write this down to remind myself, or
-as &lt;a href=&quot;https://twitter.com/garybernhardt&quot;&gt;Gary Bernhardt&lt;/a&gt; expresses it&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Store it into my muscle memory!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Vim have registers. So when ever you perform an action of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cut&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;paste&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;copy&lt;/code&gt;,
-the selection is stored in a register.&lt;/p&gt;
-
-&lt;h2 id=&quot;chose-your-register&quot;&gt;Chose your register&lt;/h2&gt;
-
-&lt;p&gt;You chose a register with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;&amp;lt;name of register&amp;gt;&lt;/code&gt; and from there you can
-do your motion, yank or whatever action you desire.&lt;/p&gt;
-
-&lt;h2 id=&quot;list-your-registers&quot;&gt;List your registers&lt;/h2&gt;
-
-&lt;p&gt;You can list your register content with&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:reg&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;the-unnamed-register-&quot;&gt;The unnamed register &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;&quot;&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;This is the default register, and vim will use this if you don’t specify a
-register.&lt;/p&gt;
-
-&lt;h3 id=&quot;the-named-register-a--z&quot;&gt;The named register &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;a--&quot;z&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;Vim has a named register for each of the letters in the alphabet. So you can
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;ad&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;ay&lt;/code&gt;, or paste &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;ap&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;the-devnull-register-_&quot;&gt;The /dev/null register &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;_&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;Sometimes you don’t want to store the text you manipulate, if you send it to
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;_&lt;/code&gt; it will not be stored.&lt;/p&gt;
-
-&lt;h3 id=&quot;the-system-clipboard-register-&quot;&gt;The system clipboard register &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;+&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;This will store the text in the default X11 clipboard, pretty handy!&lt;/p&gt;
-
-&lt;h3 id=&quot;the-selection-register-&quot;&gt;The selection register &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;*&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;This will store the text in the X11 selection clipboard, pretty handy! Note this will be the same as the system clipboard on windows or OSX, since there is only one clipboard.&lt;/p&gt;
-
-&lt;h3 id=&quot;the-expression-register-&quot;&gt;The expression register &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;=&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;This register is different, since vim drops into commandline mode, and reads the input from the script you execute.&lt;/p&gt;
-
-&lt;h3 id=&quot;and-the-rest&quot;&gt;And the rest&lt;/h3&gt;
-
-&lt;p&gt;Here are the rest of the registers:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Register&lt;/th&gt;
-      &lt;th&gt;Content&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;#&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;Alternate file&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;%&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;Current file&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;/&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;Last search pattern&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;:&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;Last Ex command&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;.&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;Last inserted text&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;I hope you’ll enjoy some more productivity in vim using registers!&lt;/p&gt;</content><author><name>Kristian Rasmussen</name><email>me plus blog at krx dot io</email></author><category term="vim" /><summary type="html">So I’m an avid vim user. I just wanted to write this down to remind myself, or as Gary Bernhardt expresses it</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/IMG_7154.png" /><media:content medium="image" url="/IMG_7154.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;Thank you to the &lt;a href=&quot;http://copenhagenrb.dk&quot;&gt;Copenhagen Ruby Brigade&lt;/a&gt; for being an awesome audience.&lt;/p&gt;</content><author><name>Kristian Rasmussen</name><email>me plus blog at krx dot io</email></author><category term="elixir" /><category term="web" /><summary type="html">About a month ago @jamiemhodge talked me into giving a talk about web developement with Elixir for the Copenhagen Ruby Brigade.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/IMG_7156.png" /><media:content medium="image" url="/IMG_7156.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
